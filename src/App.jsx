@@ -1,17 +1,15 @@
 // import { useState } from "react";
 import { Header } from "./components/Header.jsx";
 import { HeaderForm } from "./components/HeaderForm.jsx";
-import { FormBody } from "./components/FormBody.jsx";
-
-import "./App.css";
+import { ContainerForm } from "./components/ContainerForm.jsx";
 
 function App() {
   return (
-    <>
+    <div className="page">
       <Header />
       <HeaderForm />
-      <FormBody />
-    </>
+      <ContainerForm />
+    </div>
   );
 }
 

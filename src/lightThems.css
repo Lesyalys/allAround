@@ -3,10 +3,102 @@ html {
   font-family: "Space Mono", monospace;
   background-color: #ecf6fe;
 }
-.registration-form {
+
+p {
+  margin: 0px;
+}
+
+.page {
+  margin: 0px 120px 0px 120px;
+  border: 2px solid #8f6cbc;
+}
+
+.container {
+  padding: 48px 100px 48px;
+}
+
+.simpleForm {
+  padding: 24px 0px 24px 0px;
+  gap: 30px;
+  display: flex;
+  margin-bottom: 20px;
+  grid: row;
+}
+
+/* Стили для хедера */
+.HeaderBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0px 16px 0px;
+  border: 1px solid #440a8f;
+
+}
+
+
+.Logo {
+  border: 2px solid #8f6cbc;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  color: #440a8f;
+  line-height: 32px;
+
+}
+
+.SwithLabel {
+  border: 2px solid #8f6cbc;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: #440a8f;
+  line-height: 160%;
+}
+
+.checkBtn {
+  border: 2px solid #8f6cbc;
+  background-color: white;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 24px;
+  min-height: 24px;
+  position: relative;
+}
+
+.checkBtn:hover {
+  border-color: #440a8f;
+  background-color: #f5f0ff;
+}
+
+.checkBtn.active {
+  background-color: #8f6cbc;
+  border-color: #440a8f;
+}
+
+.checkBtn.active::after {
+  content: "✓";
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.mainContainer {
   /* max-width: 600px; */
-  margin: 0 auto;
-  padding: 48px 100px 48px 100px;
+  border: 2px solid #8f6cbc;
+  /* margin: 0 auto; */
+  /* padding: 48px 100px 48px 100px; */
 }
 
 .form-title {
@@ -16,11 +108,12 @@ html {
   color: #440a8f;
 }
 
+/* 
 .form-row {
   display: flex;
   gap: 16px;
   margin-bottom: 20px;
-}
+} */
 
 .form-group {
   flex: 1;
@@ -49,6 +142,7 @@ html {
   font-weight: regular;
   transition: border-color 0.3s ease;
 }
+
 .form-input:hover {
   border-color: #440a8f;
 }
@@ -77,16 +171,7 @@ html {
   margin-top: 2px;
 }
 
-/* Стили для хедера */
-.HeaderBar {
-  display: flex;
-  font-size: 28px;
-  font-weight: bold;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 20px 16px 20px;
-  border-bottom: 1px solid #440a8f;
-}
+
 
 .infoHeader {
   display: flex;
@@ -103,6 +188,7 @@ html {
   margin: 0;
   font-weight: 500;
 }
+
 .register-btn {
   padding: 20px 32px 20px 32px;
   radius: 10px;
